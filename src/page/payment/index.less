@@ -1,0 +1,98 @@
+.orderContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .orderContainerCenter{
+    width: 1000px;
+    .pageHeader{
+      padding-top: 14px;
+      line-height: 25px;
+      color: #333;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .confirmOrder {
+      .payment-methods{
+        padding: 0 50px;
+        .paymentRadios{
+          display: flex;
+          .creditCardInfo{
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+
+      }
+      .confirmOrder-row {
+        display: flex;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+        .confirmOrder-props {
+          margin-left: 50px;
+          display: flex;
+          width: 200px;
+          .confirmOrder-propsName {
+            margin-right: 5px;
+          }
+        }
+      }
+      .discount{
+        display: flex;
+        flex-wrap: wrap;
+          .discount-item{
+            margin-left: 50px;
+            width: 200px;
+            .c-top{
+              height: 3px;
+              width: 100%;
+              background: #fff url(//misc.360buyimg.com/user/purchase/2.0.0/css/i/virtual-spite.png) -36px -3px no-repeat;
+            }
+            .c-price{
+              background: #d1d1d1;
+              width: 200px;
+              height:50px;
+              padding: 10px;
+              color: #fff;
+              font: 24px Arial,Verdana,'Microsoft YaHei',SimSun;
+              .c-limit{
+                  font-size: 12px;
+              }
+            }
+            .c-time{
+              padding-left: 12px;
+              color: #b0afaf;
+              line-height: 30px;
+              border: 1px solid #d1d1d1;
+            }
+          }
+      }
+      .overall-payment{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .total-mount-title{
+          color: #666;
+        }
+        .total-mount{
+          margin-left: 15px;
+          color: #e4393c;
+          font-family: Verdana;
+          font-weight: 700;
+          font-size: 18px;
+        }
+
+        .payment-btn{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.payment-container{
+  .psdInput{
+    width:40px;
+    text-align: center;
+  }
+}

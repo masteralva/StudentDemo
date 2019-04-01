@@ -1,0 +1,103 @@
+.profileContainer{
+  padding: 0 50px;
+  .userCard{
+    padding: 0 10px;
+    .userCardFirstRow{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .userCardImg{
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .userCardName{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: rgba(0,0,0,.85);
+        margin-bottom: 4px;
+      }
+    }
+    .userCardSecondRow{
+      margin-top: 20px;
+      p{
+        .userCardIron{
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+.detailsList{
+  margin:0;
+  padding: 0;
+  .headerStyle{
+    .courseName{
+      flex:4;
+    }
+  }
+}
+.couponsList{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  .coupon{
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background-image: url(//img.alicdn.com/tps/i4/T1dYavFxJgXXXFeGHE-365-456.png);
+    background-position: -123px 0;
+    width: 241px;
+    height: 258px;
+    position: relative;
+    background-color: #81CCCD;
+    .coupon-content{
+      height:150px;
+      color: #ffffff;
+      padding-left: 20px;
+      padding-right: 20px;
+      .coupon-content-row{
+        .price-symbol{
+          font-size: 20px;
+          font-weight: 400;
+          font-family: "Microsoft Yahei",Simsun,serif;
+          vertical-align: 2px;
+        }
+        .amount{
+          font-size: 40px;
+          font-weight: 400;
+        }
+        .coupon-type{
+          font-size: 14px;
+          font-weight: 700;
+          margin-left: 20px;
+        }
+      }
+    }
+    .coupon-expired{
+      height:108px;
+      display: flex;
+      color: #e50045;
+      font-size: 24px;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      cursor: pointer;
+
+    }
+    .coupon-expired:after{
+      background-image: url(//img.alicdn.com/tps/i4/T1dYavFxJgXXXFeGHE-365-456.png);
+      background-position: 0 -13px;
+      width: 61px;
+      height: 57px;
+      position: absolute;
+      bottom: 1px;
+      right: 1px;
+      content: '';
+    }
+  }
+}
+
+

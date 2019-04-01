@@ -1,0 +1,236 @@
+.titleStyle(){
+  font-size: 18px;
+  line-height: 18px;
+  color: #202329;
+  margin-bottom: 25px;
+  position: relative;
+  font-weight: 100;
+}
+.titleBeforeStyle(){
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 4px;
+  height: 18px;
+  background-color: #333333;
+}
+.subTitleStyle(){
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  position: relative;
+  font-weight: 100;
+}
+.subTitleBeforeStyle(){
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 4px;
+  height: 16px;
+  background-color: #e0e0e0;
+}
+.detail-container{
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  .detail-container-header{
+    padding: 0 50px;
+  }
+  .title-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .course-title{
+      display: inline-block;
+      float: left;
+      font-size: 22px;
+      color: #333;
+      font-weight: 100;
+    }
+    .tag{
+      padding: 0 10px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: #fff;
+      margin-left: 20px;
+      border-radius: 12px;
+      background: #5a5b5c;
+      float: left;
+      cursor: pointer;
+    }
+  }
+  .course-intro{
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+    .literate{
+      display: flex;
+      flex-direction: column;
+      padding-left: 60px;
+      .course-des-tit{
+        font-size: 16px;
+        padding-bottom: 10px;
+        font-weight: 100;
+      }
+      .course-des{
+        color: #666666;
+        height: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical
+      }
+      .ht-sku-row{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .ht-sku-propName{
+          font-family: tahoma,arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+          color: #838383;
+          min-width: 80px;
+        }
+        .ht-sku-propOptions{
+          color:#404040;
+          font-family: tahoma,arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+          display: flex;
+          line-height: 28px;
+          .sku-option{
+            margin: 0 4px 4px 0;
+            background-color: #fff;
+            white-space: nowrap;
+            width: auto!important;
+            min-width: 10px;
+            padding: 0 9px;
+            text-align: center;
+            border: 1px solid #e2e1e3;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+          }
+          .sku-option-checked{
+            margin: 0 4px 4px 0;
+            white-space: nowrap;
+            width: auto!important;
+            min-width: 10px;
+            padding: 0 9px;
+            text-align: center;
+            border: 1px solid #ff0037;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            background:#fff url("https://www.ihatoo.com/image/right.png") no-repeat right bottom;
+            background-size:15px 15px;
+          }
+        }
+      }
+      .button-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .course-demos{
+    height:1000px;
+    width:100%;
+    margin-top:30px;
+    background-color: #fff;
+  }
+}
+
+.line{
+  height: 1px;
+  margin:20px 0;
+  background: #e0e0e0;
+}
+
+.ant-tabs-bar{
+  width:100%;
+  margin:0 auto;
+  .ant-tabs-nav-container{
+    display: block;
+  }
+}
+
+.title{
+  .titleStyle();
+  &:before{
+    .titleBeforeStyle();
+  }
+}
+
+.subtitle{
+  .subTitleStyle();
+  &:before{
+    .subTitleBeforeStyle();
+  }
+}
+
+.ant-tabs-tab{
+  width:110px;
+  font-size: 20px;
+}
+
+.bar-tab-item{
+  padding: 30px 270px;
+  img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .separate{
+    height: 17px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 37px;
+    background: url("separate.png") no-repeat center;
+  }
+}
+
+.price-panel{
+  background: #fff;
+  padding: 20px;
+  .origin-price{
+    display: flex;
+    align-items: center;
+    .origin-price-label{
+      color: #999;
+      font-size: 12px;
+      text-align: left;
+      float: left;
+      width: 69px;
+      margin: 0 0 0 8px;
+    }
+    .origin-price-value{
+      text-decoration: line-through;
+      font-size: 14px;
+    }
+  }
+  .activity-price{
+    display: flex;
+    align-items: center;
+    .activity-price-label{
+      color: #999;
+      font-size: 12px;
+      text-align: left;
+      float: left;
+      width: 69px;
+      margin: 0 0 0 8px;
+    }
+    .activity-price-value{
+      vertical-align: middle;
+      font-size: 30px;
+      color: #FF0036;
+      font-weight: bolder;
+      font-family: Arial;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
